@@ -1,1 +1,61 @@
+.header
+  .header__container
+    max-width: 1251px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 auto
+    padding-top: 45px
+    margin-bottom: 111px
+    .header__logo
+      width: 53px
+      height: 53px
+      .header__nav
+        display: flex
+        align-items: center
+.nav__link
+  color: rgb(96, 96, 96)
+  font-family: $inter
+  font-size: 17.83px
+  font-weight: 500
+  line-height: 26.74px
+  text-align: left
+  text-transform: uppercase
+  text-decoration: none
+.nav__link:not(:last-child)
+  margin-right: 54px
 
+.header__search
+  width: 348.45px
+  height: 57px
+  position: relative
+  background: rgb(237, 237, 237)
+  border-radius: 14.88px
+  border: none
+  padding: 20px 82px
+
+.header__search:after
+  content: ''
+  position: absolute
+  display: block
+  width: 21.51px
+  height: 21.51px
+  background-image: url('.../img/header/search.svg')
+  background-size: cover
+  left: 20px
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 1
+
+.header__btn
+  border-radius: 16.17px
+  background: rgb(20, 20, 22)
+  color: rgb(255, 255, 255)
+  font-family: $inter
+  font-size: 16.17px
+  font-weight: 600
+  line-height: 24.26px
+  text-align: left
+  text-transform: uppercase
+  text-decoration: none
+  padding: 17px 25px
