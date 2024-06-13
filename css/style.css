@@ -9,6 +9,9 @@
   font-family: "Poppins", sans-serif;
 }
 
+.header {
+  margin-bottom: 111px;
+}
 .header .header__container {
   max-width: 1251px;
   display: flex;
@@ -16,7 +19,6 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 45px;
-  margin-bottom: 111px;
 }
 .header .header__container .header__logo {
   width: 53px;
