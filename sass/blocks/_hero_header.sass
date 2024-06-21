@@ -7,8 +7,8 @@
   position: relative
 .arrow__big
   position: absolute
-  top: 70px
-  right: 100px
+  top: 60px
+  left: 55%
   transform: rotate(3deg)
   &--img
     width: 100%
@@ -19,7 +19,7 @@
   width: 173px
   height: 192.22px
   top: 0
-  right: -190px
+  right: 0
   &__img
     width: 100%
     height: auto
@@ -38,16 +38,24 @@
   height: 395px
   margin-bottom: 72px
   transition: all 0.5s ease-in-out
+  box-shadow: 0px 50px 60px -20px rgba(15, 15, 15, 0.3)
+  border-radius: 25px
+  background-color: white
 
   &.active
+    position: absolute
+    top: 19px
+    left: 0
     transform: translateY(0)
     opacity: 1
     filter: none
 
   &.blur
+    width: 319.16px
+    height: 322.08px
     position: absolute
-    right: -250px
-    top: -245px
+    top: -100px
+    right: 0
     transform: translateY(100%)
     filter: blur(8px)
 
@@ -57,7 +65,7 @@
     border-radius: 25px
 
 .hero__slider-btns
-  position: relative
+  position: absolute
   width: 166px
   height: 68.99px
   display: flex
@@ -66,24 +74,39 @@
   border-radius: 17.25px
   box-shadow: 0px 43.12px 34.49px -25.87px rgba(15, 15, 15, 0.12)
   background: rgb(252, 252, 253)
+  left: 112px
   bottom: 0
 
 .arrow__btn--prev
   position: absolute
   left: 20.48px
 
+  &:after
+    content: ''
+    width: 2.16px
+    height: 25.87px
+    display: block
+    position: absolute
+    top: 0
+    right: -85px
+    border-radius: 2.16px
+    background: rgb(230, 232, 236)
+    margin: 0px 34.493507385253906px
+
+  .arrow__img
+    fill: rgb(146, 146, 146)
+    transition: fill 0.3s ease
+
+    &:active
+      fill: rgb(35, 38, 47)
+
 .arrow__img--next
   position: absolute
   right: 20.48px
 
-.arrow__btn--prev:after
-  content: ''
-  width: 2.16px
-  height: 25.87px
-  display: block
-  position: absolute
-  top: 0
-  right: -85px
-  border-radius: 2.16px
-  background: rgb(230, 232, 236)
-  margin: 0px 34.493507385253906px
+  .arrow__img
+    fill: rgb(146, 146, 146)
+    transition: fill 0.3s ease
+
+    &:active
+      fill: rgb(35, 38, 47)
