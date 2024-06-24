@@ -1,4 +1,5 @@
 .weekly
+  width: 100%
   display: flex
   align-items: center
   justify-content: center
@@ -23,7 +24,7 @@
     justify-content: space-between
     flex-direction: column
 .trending__container
-  width: 1565px
+  width: 100%
   display: flex
   align-items: center
   justify-content: space-between
@@ -36,10 +37,11 @@
   padding: 20px
 .item__container
   display: flex
-  // align-items: center
   justify-content: center
   flex-direction: column
 .item__img
+  width: 253px
+  height: 253px
   border-radius: 23.48px
   margin-bottom: 19px
 .descr
@@ -77,6 +79,7 @@
 .item__total
   display: flex
   align-items: center
+  margin-bottom: 8px
 .total
   width: 21.17px
   height: 21.17px
@@ -100,40 +103,92 @@
   line-height: 150%
   letter-spacing: 0.12px
   text-align: left
-.slider-btns
-
-.weekly__slider-btns
-
-.arrow__btn--prev
-
-.arrow__img
-
-  &--next
 
 .recently__block
-
+  position: absolute
+  left: 976px
+  top: 1642px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid rgb(237, 242, 247)
+  border-radius: 16px
+  box-shadow: 10px 10px 50px 0px rgba(20, 20, 22, 0.1)
+  background: rgb(255, 255, 255)
+  padding: 27px 24px 21px
 .recently__container
-
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-direction: column
 .recently__header
-
+  width: 314px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 28px
 .recently__title
-
+  color: rgb(26, 32, 44)
+  font-family: $poppins
+  font-size: 21px
+  font-weight: 600
+  line-height: 135%
+  letter-spacing: 0.2px
+  text-align: left
+  white-space: nowrap
 .recently__dotes
-
-.r__dot
+  display: flex
+  align-items: center
+  justify-content: space-between
 
 .recently__item
-
+  width: 314px
+  display: flex
+  align-items: center
+  justify-content: space-between
+.recently__item:not(:last-child)
+  margin-bottom: 20px
 .recently__user
-
+  width: 130px
+  display: flex
+  align-items: center
+  justify-content: space-between
 .recently__avatar
-
+  width: 46.09px
+  height: 46.09px
+  border: 1.92px solid rgb(255, 255, 255)
+  border-radius: 50%
+  background: rgb(255, 255, 255)
+  overflow: hidden
 .recently__name
-
+  display: flex
+  align-items: start
+  flex-direction: column
 .name__user
-
+  color: rgb(20, 20, 22)
+  font-family: $poppins
+  font-size: 15.36px
+  font-weight: 500
+  line-height: 140%
+  text-align: left
+  margin-bottom: 8px
 .nickname__user
-
+  color: rgb(100, 116, 139)
+  font-family: $poppins
+  font-size: 12.48px
+  font-weight: 400
+  line-height: 150%
+  text-align: left
 .recently__counter
-
+  display: flex
+  align-items: end
+  flex-direction: column
 .eth
+  color: rgb(16, 196, 82)
+  font-family: $poppins
+  font-size: 13.44px
+  font-weight: 400
+  line-height: 150%
+  text-align: left
+.red
+  color: rgb(226, 51, 51)
