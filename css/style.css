@@ -659,7 +659,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 236px;
+  margin: 236px 0 100px;
 }
 .top__collection-title {
   color: rgb(20, 20, 22);
@@ -719,15 +719,25 @@
 }
 
 .users__item {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 41px;
+  margin-bottom: 80px;
+}
+
+.users__item:after {
+  content: "";
+  border: 1.69px solid rgb(235, 233, 233);
+  width: 1233.38px;
+  height: 0;
+  position: absolute;
+  top: 80px;
+  margin: 39.0453262329px 0px;
 }
 
 .collection__user {
-  width: 417.32px;
   display: flex;
   align-items: center;
 }
@@ -784,7 +794,6 @@
   width: 31.52px;
   height: 31.52px;
 }
-
 .collection__total-ratio {
   color: rgb(20, 20, 22);
   font-family: "Poppins", sans-serif;
@@ -801,4 +810,23 @@
   line-height: 130%;
   letter-spacing: 1%;
   text-align: left;
+}
+
+.view__all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120.79px;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.explore {
+  color: rgb(172, 173, 185);
+  font-family: "Poppins", sans-serif;
+  font-size: 17.67px;
+  font-weight: 500;
+  line-height: 39.92px;
+  letter-spacing: -0.09px;
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
