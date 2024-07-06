@@ -1,0 +1,15 @@
+<svg width="17.088867" height="17.088989" viewBox="0 0 17.0889 17.089" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip14_1502">
+			<rect id="icons/Check/Line" rx="-0.356020" width="10.680597" height="10.680597" transform="translate(3.203676 3.204165)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="verified artist" rx="-0.356020" width="16.376915" height="16.376915" transform="translate(0.356020 0.356020)" fill="#FFFFFF" fill-opacity="0"/>
+	<path id="Polygon 1" d="M7.12 0.82L2.56 3.45C1.68 3.95 1.14 4.89 1.14 5.91L1.14 11.17C1.14 12.18 1.68 13.13 2.56 13.63L7.12 16.26C8 16.77 9.08 16.77 9.96 16.26L14.52 13.63C15.4 13.13 15.94 12.18 15.94 11.17L15.94 5.91C15.94 4.89 15.4 3.95 14.52 3.45L9.96 0.82C9.08 0.31 8 0.31 7.12 0.82Z" fill="#45B36B" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<g clip-path="url(#clip14_1502)">
+		<path id="check" d="M5.69 8.54L7.59 10.44L11.39 6.64" stroke="#FCFCFD" stroke-opacity="1.000000" stroke-width="1.424080" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>
