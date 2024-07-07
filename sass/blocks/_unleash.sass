@@ -155,7 +155,6 @@
   position: absolute
   top: 39px
   left: 179px
-  z-index: -1
   display: flex
   align-items: start
   flex-direction: column
@@ -232,7 +231,6 @@
   line-height: 20px
   text-align: center
 .seller__btn
-  box-sizing: border-box
   border: 1.74px solid rgb(230, 232, 236)
   border-radius: 8px
   padding: 8px 13px
@@ -242,6 +240,7 @@
   line-height: 16px
   text-align: center
   text-decoration: none
+  cursor: pointer
 .illustration__dots
   position: absolute
   z-index: -2
@@ -253,3 +252,18 @@
   right: auto
 .unfollow
   background: rgb(230, 232, 236)
+  cursor: pointer
+
+.notification,
+.best__sellers,
+.unleash__recently
+  transition: z-index 0.3s
+
+.on-top
+  z-index: 100
+
+.widget
+  cursor: grab
+
+  &:active
+    cursor: grabbing

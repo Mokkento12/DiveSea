@@ -80,4 +80,44 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   showWeeklySlide(currentWeeklySlide);
+
+  const followButtons = document.querySelectorAll(".seller__btn");
+
+  followButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      button.classList.toggle("unfollow");
+
+      if (button.classList.contains("unfollow")) {
+        button.textContent = "Unfollow";
+      } else {
+        button.textContent = "Follow";
+      }
+    });
+  });
+
+  const notification = document.querySelector(".notification");
+  const bestSellers = document.querySelector(".best__sellers");
+  const recentlyBlock = document.querySelector(".unleash__recently");
+
+  const elements = [notification, bestSellers, recentlyBlock];
+
+  elements.forEach((element) => {
+    element.addEventListener("click", () => {
+      elements.forEach((el) => el.classList.remove("on-top"));
+      element.classList.add("on-top");
+    });
+  });
+
+  Draggable.create(".widget", {
+    bounds: ".unleash",
+    onDragStart: function () {
+      this.target.classList.add("on-top");
+    },
+    onDragEnd: function () {
+      elements.forEach((el) => el.classList.remove("on-top"));
+      this.target.classList.add("on-top");
+    },
+  });
 });
