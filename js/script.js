@@ -120,4 +120,14 @@ document.addEventListener("DOMContentLoaded", function () {
       this.target.classList.add("on-top");
     },
   });
+
+  const button = document.querySelector(".content_btn");
+  const joinCommunity = document.querySelector(".join__community");
+  const faqs = document.querySelector(".faqs");
+
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
+    joinCommunity.classList.toggle("hidden");
+    faqs.classList.toggle("hidden");
+  });
 });
